@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <title>DEV Programmer</title>
+
+</head>
+
+<body>
+    <div>
+        <div>
+
+            <div class="header">
+                <h2 class="tittle-header">DEV Programmer</h2>
+
+                <a href="#bottom-tittle" class="link-header">Quem somos</a>
+
+                <a href="#central-services" class="link-header">Serviços</a>
+
+                <a class="link-header" onclick="clickon()">Contato</a>
+            </div>
+            <h1>Dev Programmer</h1>
+
+            <form id="form" action="https://formsubmit.co/coisadedev33@gmail.com" method="POST">
+                <h3 id="tittle-form"> Entre em contato</h3>
+
+                <label>
+                    Nome
+                    <input type="text" name="nome" placeholder="Digite Seu Nome" required />
+                </label>
+
+                <label>
+                    E-Mail
+                    <input type="email" name="email" placeholder="Digite Seu E-Mail" required />
+                </label>
+
+                <label>
+                    Celular
+                    <input type="tel" name="telefone" placeholder="Digite Seu Celular" required />
+                </label>
+
+                <label>
+                    Fale conosco
+                    <textarea name="info" placeholder="Como podemos ajudar?"></textarea>
+
+                </label>
+
+                <button type="submit"> Enviar</button>
+
+            </form>
+
+
+        </div>
+
+
+        <h2 class="tittle-mid"> Nossos Serviços </h2>
+        <div id="central-services">
+
+
+
+
+
+            <div class="services">
+                <h3 class="tittle-services">Web Developer</h3>
+
+                <ul>
+                    <li>Criamos Seu Site</li>
+                    <li>Segundo item</li>
+                    <li>terceiro item</li>
+
+                </ul>
+
+            </div>
+
+            <div class="services">
+                <h3 class="tittle-services">APP Developer</h3>
+
+                <ul>
+                    <li>Damos vida ao seu programa</li>
+                    <li>Criamos seu aplicativo mobile</li>
+                    <li>terceiro item</li>
+
+                </ul>
+
+            </div>
+
+            <div class="services">
+                <h3 class="tittle-services">Back-End developer</h3>
+
+                <ul>
+                    <li>Cuidamos do seu servidor</li>
+                    <li>Segundo item</li>
+                    <li>terceiro item</li>
+
+                </ul>
+
+            </div>
+
+
+
+
+        </div>
+
+        <div class="div-bottom">
+
+
+
+            <h2 id="bottom-tittle">Sobre Nós</h2>
+
+
+            <p class="bottom-text">
+                Tudo começou no ano de 2015 quando um grupo pequenos de DEVS decidiu criar algo maior que uma empresa,
+                cujo foco era ajudar as empresas a ingressar no mundo da internet,
+                nos especializamos para não apenas nós, mas também para pessoas que não sabem nada de tecnologia
+                e ajuda-las a entender melhor este mundo sem precisar estudar programação;
+                assim surgiu o DEV Programmer,
+                onde você pode confiar a sua empresas a nós.
+
+
+            </p>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+<script type="text/javascript">
+let formulario = document.getElementById("form")
+
+
+function clickon(){
+    formulario.className = "show-form"
+}
+
+
+
+</script>
+
+
+</html>
